@@ -26,7 +26,7 @@ public class Application {
 	private static final Logger log = LoggerFactory.getLogger(Application.class);
 
 	public static void main(String[] args) {
-		ApplicationContext ctx = SpringApplication.run(Application.class, args);
+		final ApplicationContext ctx = SpringApplication.run(Application.class, args);
 		
 		log.info("Let's inspect the beans provided by Spring Boot:");
 		log.info("-------------------------------");
